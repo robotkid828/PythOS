@@ -814,7 +814,7 @@ def prepare_os():
     configuration_file = open("../pythos.cfg", "w")
     #1 mib default
     configuration = {
-      "version": "-1.0.0",
+      "version": "-1.1.0",
       "storage_size": 1048576,
       "ram_size": 1048576
     }
