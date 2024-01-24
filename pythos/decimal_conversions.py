@@ -52,6 +52,8 @@ def binary_to_ascii(binary):
     return ""
 
 def ascii_to_binary(ascii, length=None):
+  if not ascii in ascii_characters:
+    return decimal_to_binary(0, length)
   return decimal_to_binary(ascii_characters.index(ascii), length)
 
 def ascii_string_to_binary(ascii, string_length=None, character_length=None):
